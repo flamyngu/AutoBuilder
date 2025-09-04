@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "autobuilder",
+  "version": "${version}",
+  "name": "AutoBuilder",
+  "description": "a little mod about building things automatically",
+  "authors": ["Dodo"],
+  "contact": {
+    "sources": "https://github.com/flamyngu/AutoBuilder"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.flamyngu.autobuilder.autobuilder.client.AutobuilderClient"
+    ],
+    "main": [
+      "com.flamyngu.autobuilder.autobuilder.Autobuilder"
+    ]
+  },
+  "mixins": [
+    "autobuilder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
